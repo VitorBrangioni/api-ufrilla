@@ -1,4 +1,4 @@
-# api-ufrilla
+# ufrilla-api
 API para provas de estágio da ufrilla.
 
 ### How run

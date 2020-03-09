@@ -1,0 +1,35 @@
+version: '2'
+
+services:
+  web:
+    build: src/.
+    environment:
+      - POSTGRES_USER=ufrilla
+      - POSTGRES_PASSWORD=dev
+      - POSTGRES_DB=ufrilla
+      - POSTGRES_HOST=ufrilla-api-test_db_1
+      - AMBIENTE=DESENV
+      - HOST=localhost:3000
+    ports:
+      - "3000:3000"   #web service port
+      - "5859:5859"   #debug port
+    volumes:
+      - ./:/ufrilla
+    networks:
+        - ufrilla-network
+    working_dir: /ufrilla
+    command: sh -c "npm install && cd src && nodemon app.js"
+    depends_on:
+      - db
+    container_name: web
+    
+  db:
+    build: database/.
+    ports:
+      - "5432:5432"
+    networks:
+        - ufrilla-network
+
+networks:
+  ufrilla-network:
+    driver: bridge

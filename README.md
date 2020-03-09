@@ -1,6 +1,12 @@
 # api-ufrilla
 API para provas de estágio da ufrilla.
 
+### How run
+
+1) Install `docker` and `docker-compose`;
+2) run code `docker-compose build`;
+3) run code `docker-compose up web`;
+
 ---
 
 ### GET: /api/freelancer-type

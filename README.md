@@ -5,7 +5,9 @@ API para provas de estágio da ufrilla.
 
 1) Install `docker` and `docker-compose`;
 2) run code `docker-compose build`;
-3) run code `docker-compose up web`;
+3) run code `docker-compose up web`.
+
+Api is listening in port 3000. (http://localhost:3000)
 
 ---
 

@@ -8,14 +8,16 @@ API para provas de estágio da ufrilla.
 Find all freelancers type
 
 *RESPONSE:*
-```[
+```json
+[
     {
         "id": 1,
         "type": "garcom",
         "created_at": "2019-01-01T11:00:00.000Z",
         "updated_at": "2019-01-01T11:00:00.000Z"
     }
-]```
+]
+```
 
 ### GET: /api/job
 

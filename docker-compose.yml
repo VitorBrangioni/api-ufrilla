@@ -7,7 +7,7 @@ services:
       - POSTGRES_USER=ufrilla
       - POSTGRES_PASSWORD=dev
       - POSTGRES_DB=ufrilla
-      - POSTGRES_HOST=ufrilla-api-test_db_1
+      - POSTGRES_HOST=ufrilla-api_db_1
       - AMBIENTE=DESENV
       - HOST=localhost:3000
     ports:
